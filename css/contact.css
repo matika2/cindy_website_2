@@ -1,0 +1,99 @@
+@import "common.css";
+@import "input_table.css";
+@import "input_form.css";
+
+.bordered-content {
+    box-shadow: 0px 0px 40px var(--global-font-color);
+    border: none;
+    width: min(85%, 700px)
+}
+
+#textual-menu #contact-menu-select, #textual-menu #contact-menu-select_admin {
+    color: var(--global-font-color-menu-selected);
+    font-weight: var(--global-font-weight-menu-selected);
+}
+
+.input-base-align {
+    vertical-align: top; text-align: left;
+}
+.contact-row {
+    transition: transform 500ms;
+}
+
+.contact-row:hover {
+    background-color: var(--global-bg-color);
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+.contact-separator {
+    border-top: 1px solid var(--global-font-color-half-opaque);
+}
+
+.static-contact {
+    margin: 0 auto;
+}
+
+.perfKindInputs {
+    text-align: left;
+}
+
+input[type=date]{
+    width: 135px;
+}
+
+#payment {
+    width: 120px;
+}
+
+input[type=time]{
+    width: 120px;
+}
+
+.display-table {
+    width: 100%;
+}
+
+.radio-buttons {
+    display: inline-block;
+    margin-left: 10%;
+}
+
+.perfKindInputsPrivate, .privatePrivatePerf, .perfKindInputsInner, #otherKind /*, #publicKindOtherText*/ {
+    display: none;
+}
+
+.perfKindInputs input {
+    margin-left: 10%;
+}
+
+.perfKindInputsInner input {
+    margin-left: 20%;
+}
+
+.middle-adjust {
+    padding-left: 5%;
+}
+
+/* Not the same screen size due to lots of elements showing up wrongly with lesser width*/
+@media screen and (max-width: 800px) {
+    .middle-adjust {
+        padding-left: 0;
+    }
+
+    .radio-buttons {
+        margin-left: 0;
+    }
+
+    .perfKindInputs input{
+        margin-left: 0;
+    }
+
+    .perfKindInputsInner input{
+        margin-left: 0;
+    }
+
+    .contact-section {
+        width: 95%;
+    }
+}

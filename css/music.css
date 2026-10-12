@@ -1,0 +1,67 @@
+@import "common.css";
+
+.music-content-title {
+    margin-right: auto;
+    width: 33%;
+    font-size: 20px;
+    color: var(--global-font-color)
+}
+
+.bordered-content {
+    border: none;
+    padding: 0;
+    background-color: transparent;
+}
+
+#textual-menu #music-menu-select {
+    color: var(--global-font-color-menu-selected);
+    font-weight: var(--global-font-weight-menu-selected);
+}
+
+.youtube-video-frame {
+    display: inline-block;
+    margin: 2em;
+}
+
+.youtube-link-frame {
+    width: 80vw;
+    height: 250px;
+    max-width: 500px;
+}
+
+.cindy-music-logo-image-div {
+    display: inline-block;
+    max-width: 150px;
+    width: min(15%, 150px);
+    padding: 0 0.5em 0 0.5em;
+    box-sizing: border-box;
+}
+
+.cindy-music-logo-div {
+
+}
+
+.one-music{
+    display: inline-block;
+    text-align: start;
+    margin: 2% 2%;
+}
+
+.youtube-link-button-wrapper {
+    margin-bottom: 2em;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.music-content {
+    width: min(100%, 1200px);
+}
+
+@media screen and (max-width: 1400px) {
+    .youtube-video-frame {
+        margin: 1em;
+    }
+}

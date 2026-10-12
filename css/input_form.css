@@ -1,0 +1,65 @@
+.contact-section {
+    width: 90%;
+    font-weight: bold;
+    font-size: 1em;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: left;
+    display: inline-block;
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: var(--global-font-color);
+    opacity: 0.4; /* Firefox */ /* 0.4 like format due to safari incompatibility */
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: var(--global-font-color);
+    opacity: 40%; /* Firefox */
+
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+    color: var(--global-font-color);
+    opacity: 60%; /* Firefox */
+}
+
+/*::-webkit-input-placeholder {
+    opacity: 0.6;
+}*/
+
+input::placeholder {
+    opacity: 60%;
+}
+
+input[type=text], textarea, input[type=button], input[type=reset], input[type=password], input[type=email] {
+    width: 100%;
+    padding: 3px 5px;
+    margin: 0em 0 0.2em 0;
+    box-sizing: border-box;
+    border: 2px solid var(--global-font-color-half-opaque);
+    /*border-radius: 4px;*/
+    opacity: 60%;
+    color: var(--global-font-color);
+    /*font-size: 1em;*/
+    background-color : white;
+    font-weight: bold;
+}
+
+input[type=date], input[type=time], select {
+    display: inline-block;
+    /*color: grey;*/
+    border: 2px solid var(--global-font-color-half-opaque);
+    font-size: 1em;
+    opacity: 60%;
+    background-color : var(--global-form-background-color);
+    color: var(--global-font-color);
+    font-weight: bold;
+}
+
+@media screen and (max-width: 1400px) {
+    .contact-section {
+        width: 95%;
+        font-size: max(min(1em, 2.5vh), min(1em, 3vw));
+    }
+}

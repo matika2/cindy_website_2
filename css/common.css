@@ -1,0 +1,230 @@
+@import "menubar.css";
+@import "globals.css";
+
+@font-face {
+    font-family: "Trade Gothic Next LT Pro Cn";
+    src: url("fonts/TradeGothicNextLTPro-Lt.eot");
+    src: url("fonts/TradeGothicNextLTPro-Lt.eot?#iefix") format("embedded-opentype"), url("fonts/TradeGothicNextLTPro-Lt.woff2") format("woff2"), url("fonts/TradeGothicNextLTPro-Lt.woff") format("woff"), url("fonts/TradeGothicNextLTPro-Lt.ttf") format("truetype"), url("fonts/TradeGothicNextLTPro-Lt.svg#Trade Gothic Next LT Pro Cn") format("svg");
+    font-weight:300;
+    font-style:normal;
+    font-display:swap;
+}
+
+@font-face {
+    font-family: "Trade Gothic Next LT Pro Cn";
+    src: url("fonts/TradeGothicNextLTPro-Rg.eot");
+    src: url("fonts/TradeGothicNextLTPro-Rg.eot?#iefix") format("embedded-opentype"), url("fonts/TradeGothicNextLTPro-Rg.woff2") format("woff2"), url("fonts/TradeGothicNextLTPro-Rg.woff") format("woff"), url("fonts/TradeGothicNextLTPro-Rg.ttf") format("truetype"), url("fonts/TradeGothicNextLTPro-Rg.svg#Trade Gothic Next LT Pro Cn") format("svg");
+    font-weight:400;
+    font-style:normal;
+    font-display:swap;
+}
+
+@font-face {
+    font-family: "Trade Gothic Next LT Pro Cn";
+    src: url("fonts/TradeGothicNextLTPro-Bd.eot");
+    src: url("fonts/TradeGothicNextLTPro-Bd.eot?#iefix") format("embedded-opentype"), url("fonts/TradeGothicNextLTPro-Bd.woff2") format("woff2"), url("fonts/TradeGothicNextLTPro-Bd.woff") format("woff"), url("fonts/TradeGothicNextLTPro-Bd.ttf") format("truetype"), url("fonts/TradeGothicNextLTPro-Bd.svg#Trade Gothic Next LT Pro Cn") format("svg");
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* TODO add CSS to body so that the property is inherited. Generally text related props are inherited, box model related props are not inherited */
+body {
+    /*background: url('/images/flowers_left3.png') left top / auto auto no-repeat fixed, url('/images/flowers_right3.png') right top / auto auto no-repeat fixed;*/
+    background-color: var(--global-bg-color);
+    margin: 0;
+    text-align: center;
+    font-family: "Trade Gothic Next LT Pro Cn", sans-serif;
+    /*font-weight: 300;*/
+}
+input::placeholder {
+    color: var(--global-font-color-half-opaque);
+}
+.inactive {
+    color: gray !important;
+}
+
+.active {
+    color: var(--global-font-color);
+}
+
+.shadow {
+    display:block;
+    position:relative;
+}
+
+.shadow:before
+{
+    display:block;
+    content:'';
+    position:absolute;
+    width:100%;
+    height:100%;
+    -moz-box-shadow:inset 0px 0px 6px 6px rgba(255,255,255,1);
+    -webkit-box-shadow:inset 0px 0px 6px 6px rgba(255,255,255,1);
+    box-shadow:inset 0px 0px 1em 0.5em rgba(255,255,255,1);
+    pointer-events: none;
+}
+
+h1 {
+    font-size: min(7vmin, 1.6em);
+    margin: 0;
+    color: var(--global-font-color);
+}
+
+h2 {
+    color: var(--global-font-color);
+    font-size: min(6vmin, 1.4em);
+    letter-spacing: 0px;
+    word-spacing: 2px;
+}
+
+.mobile-logout {
+    margin: auto 0;
+    padding-bottom: 1em;
+}
+
+.custom-button {
+    border-radius: 6px;
+    font-weight: bold;
+    padding: 0.3em;
+    color: var(--global-font-color);
+    background: white;
+    margin-left: 1em;
+    margin-top: 0.2em;
+    border: 1px solid var(--global-font-color-half-opaque);
+}
+
+.custom-transition {
+    transition: all 500ms;
+}
+
+.gray-button-background {
+    background-color: #d1d1d1;
+}
+.green-button-background {
+    background-color: #c3ebc3;
+}
+
+.red-button-background {
+    background-color: #fbb2b2;
+}
+
+.custom-button:hover, .custom-button:active {
+    background-color: var(--global-font-color-half-opaque);
+    transform: translate(0, -2px);
+    color: var(--global-font-color-menu-selected);
+}
+
+#order-abroad {
+    margin-left: 0;
+}
+
+.custom-button:active {
+    transform: scale(0.98) translate(0, 0px);
+}
+
+.bordered-content {
+    width: 55%;
+    margin: 3% auto;
+    color: var(--global-font-color);
+    padding: 1em;
+    background-color: white;
+    border-radius: 10px;
+    border: 1px solid var(--global-font-color);
+}
+
+.footer {
+    bottom: 0;
+    width: min(25%, 400px);
+    position: fixed;
+    background-color: var(--global-font-color);
+    color: white;
+    transition: all 1000ms;
+    display: block;
+    vertical-align: middle;
+}
+
+.footer:hover {
+    transform: scale(1.05);
+}
+
+.footer-placeholder {
+    height: 6em;
+}
+
+.cart-count {
+    position: relative;
+    top: 20px;
+    right: 3px;
+    font-size: 10px;
+    border-radius: 50%;
+    background: white;
+    width: 16px;
+    height: 16px;
+    line-height: 16px;
+    text-align: center;
+    color: var(--global-font-color);
+    font-weight: bold;
+    display: inline-block;
+}
+
+.cart-item-changed {
+    animation-name: cart-item-changed-animation;
+    animation-duration: 300ms;
+}
+
+.youtube-video {
+    aspect-ratio: 16 / 9;
+    width: 80%;
+}
+
+@keyframes cart-item-changed-animation {
+    0% {
+        top: 20px;
+    }
+    50% {
+        top: 15px;
+    }
+    100% {
+        top: 20px;
+    }
+}
+
+
+.cart_link {
+    text-decoration: none;
+}
+
+.mobile-h1-header {
+    display: none;
+    padding: 1em 0 0 0;
+}
+
+.invisible {
+    display: none;
+}
+
+@media screen and (max-width: 1400px) {
+    .bordered-content {
+        width: 90%;
+    }
+
+    .footer {
+        width: 100%;
+        box-shadow: none;
+        font-size: 1.0em;
+        line-break: strict;
+        white-space: nowrap;
+    }
+
+    .mobile-h1-header {
+        display: block;
+    }
+}
+
+@media screen and (max-height: 400px) {
+     .footer {
+        visibility: hidden;
+    }
+}

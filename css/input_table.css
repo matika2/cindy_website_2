@@ -1,0 +1,39 @@
+.input-table {
+    width: 100%;
+    border-spacing: 0;
+}
+
+.input-equal-split {
+    width: 50%;
+}
+
+.input-70-percent-split {
+    width: 70%;
+}
+
+label {
+    text-transform: uppercase;
+}
+
+.input-split-to-one-third {
+    width: 33.333333%;
+}
+
+.input-split-to-one-fourth {
+    width: 25%;
+}
+
+@media screen and (max-width: 800px) {
+
+    .input-table td {
+        display: block;
+    }
+
+    .input-table tr {
+        display: block;
+    }
+
+    .input-base-align, .input-70-percent-split, .input-equal-split, .input-split-to-one-third, .input-split-to-one-fourth {
+        width: 100%;
+    }
+}

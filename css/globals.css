@@ -1,0 +1,26 @@
+/*@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');*/
+
+:root {
+    /* Background color of the whole website */
+    --global-bg-color: rgb(225,237,244);
+
+    /* Font color of the whole website */
+    --global-font-color: rgb(106,165,200);
+    --global-font-color-half-opaque: rgba(106,165,200, 0.6);
+    --global-bg-color-fairly-opaque: rgba(106,165,200, 0.3); /*rgb(189 215 230)*/
+    --global-font-color-menu-selected: rgb(31,63,82);
+    --global-font-weight-menu-selected: bold;
+
+    --global-font-family: "Trade Gothic Next LT Pro Cn", sans-serif;
+    /*--global-font-family: "Roboto", "Brush Script MT", cursive;*/ /* roboto */
+    /*--global-font-family: 'Brush Script MT', cursive;
+    --global-font-family-mobile: 'Brush Script MT', cursive;*/
+    /*--global-font-family-mobile: "Roboto", "Brush Script MT", cursive;*/
+    --global-font-family-mobile: "Trade Gothic Next LT Pro Cn", sans-serif;
+
+    --global-form-background-color: rgb(225,237,244);
+
+    --global-border-color: rgb(67,162,63);
+
+    --global-footer-color: var(--global-font-color)
+}

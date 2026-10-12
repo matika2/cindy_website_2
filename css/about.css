@@ -1,0 +1,44 @@
+@import "common.css";
+@import "admin.css";
+
+.bordered-content {
+    padding: min(2em,4vw);
+    margin: 1% auto;
+    box-shadow: 0px 0px 40px var(--global-font-color);
+    border: none;
+    width: min(85%, 700px);
+    transition: box-shadow 1000ms;
+}
+
+.bordered-content:hover {
+    box-shadow: 0px 0px 100px var(--global-font-color);
+}
+
+#textual-menu #bio-menu-select {
+    color: var(--global-font-color-menu-selected);
+    font-weight: var(--global-font-weight-menu-selected);
+}
+
+.intro {
+    /* font-size: 16px; */
+    text-align: left;
+    letter-spacing: 1px;
+    line-height: 1.4;
+    margin-bottom: 2%;
+}
+
+.about-img {
+    float: right;
+    width: min(max(30vw, 40%), 300px);
+    margin-right: 1em;
+    border-style: none;
+    border-radius: 10px;
+}
+
+.intro-with-img {
+    position: relative;
+}
+
+@media screen and (max-width: 1400px) {
+
+}

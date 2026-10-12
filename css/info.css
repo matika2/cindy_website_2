@@ -1,0 +1,39 @@
+@import "common.css";
+
+#textual-menu #info-menu-select {
+    color: var(--global-font-color-menu-selected);
+    font-weight: var(--global-font-weight-menu-selected);
+}
+
+h1, h2, h3 {
+    text-align: center;
+}
+
+h2 {
+    text-transform: uppercase;
+}
+
+.bordered-content {
+    max-width: 800px;
+    text-align: left;
+}
+
+.sub-detail {
+    font-size: 1.2em;
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    text-align: left;
+}
+li > a {
+    text-decoration: none;
+    color: rgb(60, 124, 164);
+}
+
+#order-abroad-links {
+    display: inline-block;
+}
